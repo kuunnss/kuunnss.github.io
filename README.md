@@ -23,9 +23,6 @@ port 6380
 ```markdown
 pidfile /var/run/redis_6380.pid
 ```
-```markdown
-pidfile /var/run/redis_6380.pid
-```
 ### 配置从机
 ```markdown
 # slaveof <masterip> <masterport>
