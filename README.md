@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+# 简单实现Redis读写分离
 
-You can use the [editor on GitHub](https://github.com/kuunnss/kuunnss.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 1.安装Redis
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+$ wget http://download.redis.io/releases/redis-4.0.8.tar.gz
+$ tar xzf redis-4.0.8.tar.gz
+$ cd redis-4.0.8
+$ make
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
+## 2.拷贝Redis.conf 并进行配置
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kuunnss/kuunnss.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+## 3.启动主从Redis
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## 4.连接主从Redis 并测试
