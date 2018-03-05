@@ -10,16 +10,20 @@ $ make
 ```
 ## 2.拷贝Redis.conf 并进行配置
 进入redis安装文件夹
+拷贝一份redis配置文件
 ```markdown
 cp redis.conf redis2 conf
 ```
 ### 配置 端口号
+修改配置文件
 ```markdown
 vi Redis2.conf 
 ```
+配置端口号
 ```markdown
 port 6380
 ```
+配置进程Id
 ```markdown
 pidfile /var/run/redis_6380.pid
 ```
