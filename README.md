@@ -1,7 +1,7 @@
 # 简单实现Redis读写分离（一主一从为例）
 
 ## 1.安装Redis
-
+下载 解压缩 并且安装
 ```markdown
 $ wget http://download.redis.io/releases/redis-4.0.8.tar.gz
 $ tar xzf redis-4.0.8.tar.gz
@@ -12,7 +12,7 @@ $ make
 进入redis安装文件夹
 拷贝一份redis配置文件
 ```markdown
-cp redis.conf redis2 conf
+cp redis.conf redis2.conf
 ```
 ### 配置 端口号
 修改配置文件
